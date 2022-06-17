@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:rgb(19, 19, 38);
+}
+html {
+    scroll-behavior: smooth;
+}
+nav{
+    font-family:Helvetica;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(32, 36, 50);
+    height: 4.3em;
+    top: 0;
+    z-index: 1;
+}
+.logo img{
+    width: 3.5em;
+    height: 2.5em;
+    margin-top: 0.8em;
+    margin-left: 2em;
+    border-radius:2em;
+}
+.logo img:hover{
+    opacity: 0.3;
+}
+div.navBar{
+    font-size: large;
+    font: bold 20px/30px Helvetica;
+    position:absolute;
+    width:100px;
+    top: 1em;
+    right:18em;
+    display: inline;
+    white-space: nowrap;
+}
+div.navBar .active, .nav:hover{
+    color:aliceblue;
+}
+div.navBar a{
+    text-decoration:none;
+    color: rgb(143, 143, 143);
+    white-space: nowrap;
+    border-radius: 2em;
+    padding: 0.7em;
+    margin: 0.3em;
+}
+#main{
+    height: 20em;
+}
+#contact{
+    font-family: 'Courier New', Courier, monospace;
+    position:relative;
+    background-color: aliceblue;
+    height: 14em;
+    bottom: -25em;
+    width: 100%;
+}
+#contact .num{
+    position:static;
+    height: 10em;
+    padding-left: 60em
+}
+
+#contact .social-media{
+    position:static;
+    background-color: rgb(201, 216, 228);
+    height: 4em;
+
+}
+#contact .num p{
+    position: relative;
+    /* left: 40em; */
+    top: 5em;
+}
+#contact .social-media i{
+    color:rgb(19, 19, 38);
+    text-decoration:none;
+    font-size: 2em;
+    position: -webkit-relative;
+    float: right;
+    left:33em;
+    top: 0.5em;
+    padding: 0.4em;
+    
+}
+#contact .social-media i:hover{
+    opacity: 0.3;
+}
+
+#me .about-me{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.417);
+    border-radius: 0.7em;
+    height: 20em;
+    width: 65%;
+    left:13em;
+    top:10em;
+    border:1px solid rgba(38, 38, 49, 0.736);
+}
+#me .about-me p{
+    position: relative;
+    padding: 1em 2em;
+}
+#me img{
+    position: relative;
+    border:1px solid rgba(38, 38, 49, 0.736);
+    height: 14em;
+    width: 14em;
+    border-radius:10em;
+    left:13em;
+    top:9em;
+}
+#me .add-info{
+    position: absolute;
+    border:1px solid rgba(38, 38, 49, 0.736);
+    background-color: rgba(0, 0, 0, 0.417);
+    border-radius: 0.7em;
+    height: 13em;
+    width: 25em;
+    top:9.5em;
+    left: 40em;
+}
+#me .add-info a, #me .add-info p{
+    position: relative;
+    font: bold 15px/30px 'Courier New', Courier, monospace;
+    color: aliceblue;
+    text-decoration: none;
+    padding:2em;
+    top:1.5em;
+}
+#me .add-info a:hover{
+    color: rgb(106, 150, 189);
+    text-decoration: none;
+}
+.intro{
+    margin-left:29em;
+    margin-top: 30em;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.intro h1{
+    font-size: 7em;
+}
+#random-dog{
+    position: absolute;
+    left:29em;
+    top:7em;
+    text-align: center;
+}
+#imageRandom{
+    border-radius: 1em;
+    border:1px solid rgba(78, 78, 100, 0.736);
+    width: 250px;
+    height: 250px;
+}
+#random-dog p{
+    position:relative;
+    top:2em;
+    color: brown;
+}
+.grid {
+    padding: 10em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2em;
+    margin: 2em;
+    font: 12px system-ui;
+  }
+.grid > div {
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+  }
